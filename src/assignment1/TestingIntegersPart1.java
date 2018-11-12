@@ -22,6 +22,9 @@ class TestingIntegersPart1 {
 		
 		int outputsum = test.SumOfNumbers(inputlist);
 		assertEquals(12,outputsum);
+		
+		int outputproduct = test.ProductOfNumbers(inputlist);
+		assertEquals(60,outputproduct);
 	}
 
 }
