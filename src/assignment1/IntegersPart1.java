@@ -17,6 +17,7 @@ public class IntegersPart1 {
 		}
 		
 		SumOfNumbers(ListOfNumbers);
+		ProductOfNumbers(ListOfNumbers);
 		return ListOfNumbers;
 	}
 	
@@ -27,6 +28,15 @@ public class IntegersPart1 {
 			sum = sum + ListOfNumbers[i];
 		}
 		return sum;
+	}
+	
+	public static int ProductOfNumbers(int[] ListOfNumbers) {
+		int product = 1;
+		
+		for (int i=0; i<ListOfNumbers.length; i++) {
+			product = product * ListOfNumbers[i];
+		}
+		return product;
 		
 	}
 }
