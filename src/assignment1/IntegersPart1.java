@@ -15,6 +15,18 @@ public class IntegersPart1 {
 		for (int i=0;i<n;i++) {
 			ListOfNumbers[i] = scan.nextInt();
 		}
+		
+		SumOfNumbers(ListOfNumbers);
 		return ListOfNumbers;
+	}
+	
+	public static int SumOfNumbers(int[] ListOfNumbers) {
+		int sum = 0;
+		
+		for(int i=0;i<ListOfNumbers.length;i++) {
+			sum = sum + ListOfNumbers[i];
+		}
+		return sum;
+		
 	}
 }
