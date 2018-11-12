@@ -9,7 +9,6 @@ class TestingIntegersPart1 {
 
 	@Test
 	void test() {
-		//Test 1:
 		IntegersPart1 test = new IntegersPart1();
 		int output = test.UserInput(3);
 		
@@ -25,6 +24,9 @@ class TestingIntegersPart1 {
 		
 		int outputproduct = test.ProductOfNumbers(inputlist);
 		assertEquals(60,outputproduct);
+		
+		int outputaverage = test.AverageOfNumbers(inputlist);
+		assertEquals(4,outputaverage);
 	}
 
 }
