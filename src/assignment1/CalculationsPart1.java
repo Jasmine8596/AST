@@ -23,7 +23,8 @@ public class CalculationsPart1 {
 			return 0.0;
 		}
 		else {
-			return Math.pow(2, 1/number);
+			double power = 1.0/Double.valueOf(number);
+			return Math.pow(2, power);
 		}
 	}
 	
@@ -32,6 +33,7 @@ public class CalculationsPart1 {
 	}
 	
 	public static void main(String[] args) {
+		
 		for(int i=0;i<=100;i++) {
 			int out1 = Function2n(i);
 			double out2 = FunctionRootn(i);
@@ -51,6 +53,7 @@ public class CalculationsPart1 {
 			System.out.print("\t");
 			System.out.print(out6);
 			System.out.print("\n");
+			
 		}
 	}
 }
