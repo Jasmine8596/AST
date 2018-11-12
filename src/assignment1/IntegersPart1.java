@@ -1,7 +1,6 @@
 package assignment1;
 
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class IntegersPart1 {
 	
@@ -46,14 +45,31 @@ public class IntegersPart1 {
 	}
 	
 	public static void main(String[] args) {
-		int[] list = new int[] {5,6,7,8,9};
+		Scanner scan = new Scanner(System.in);
 		
-		IntegersPart1 InMain = new IntegersPart1();
+		System.out.println("Select a number between 0 and 100:");
+		LengthOfList = scan.nextInt();
 		
-		System.out.println(InMain.UserInput(5));
-		System.out.println(Arrays.toString(InMain.ListOfNumbers(list)));
-		System.out.println(InMain.SumOfNumbers(list));
-		System.out.println(InMain.ProductOfNumbers(list));
-		System.out.println(InMain.AverageOfNumbers(list));
+		int[] list = new int[LengthOfList];
+		
+		for(int i = 0; i < LengthOfList ; i++) {
+			System.out.format("Number %d:",i+1);
+			list[i] = scan.nextInt();
+		}
+		scan.close();
+		
+		UserInput(LengthOfList);
+		ListOfNumbers(list);
+		
+		System.out.println("\n");
+		
+		System.out.println("Sum of numbers in list:");
+		System.out.println(SumOfNumbers(list));
+		
+		System.out.println("Product of numbers in list:");
+		System.out.println(ProductOfNumbers(list));
+		
+		System.out.println("Average of numbers in list:");
+		System.out.println(AverageOfNumbers(list));
 	}
 }
