@@ -1,5 +1,4 @@
 package assignment1;
-import java.util.Scanner;
 
 
 public class IntegersPart1 {
@@ -16,7 +15,7 @@ public class IntegersPart1 {
     return ListOfNumbers;
   }
 
-	public static int SumOfNumbers() {
+	public static int SumOfNumbers(int[] ListOfNumbers) {
 		int sum = 0;
 
 		for(int i=0;i<ListOfNumbers.length;i++) {
@@ -25,7 +24,7 @@ public class IntegersPart1 {
 		return sum;
 	}
 
-	public static int ProductOfNumbers() {
+	public static int ProductOfNumbers(int[] ListOfNumbers) {
 		int product = 1;
 
 		for (int i=0; i<ListOfNumbers.length; i++) {
