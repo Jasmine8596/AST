@@ -1,8 +1,5 @@
 package assignment1;
 
-import java.util.Scanner;
-import java.lang.*;
-
 public class CalculationsPart1 {
 	
 	public static int Function2n(int number) {
@@ -17,7 +14,7 @@ public class CalculationsPart1 {
 		return Math.pow(10, number);
 	}
 	
-	public static double FunctionnCube(int number) {
+	public static int FunctionnCube(int number) {
 		return number*number*number;
 	}
 	
@@ -39,7 +36,7 @@ public class CalculationsPart1 {
 			int out1 = Function2n(i);
 			double out2 = FunctionRootn(i);
 			double out3 = Function10Powern(i);
-			double out4 = FunctionnCube(i);
+			int out4 = FunctionnCube(i);
 			double out5 = Function2Powern(i);
 			double out6 = FunctionePowern(i);
 			System.out.print(out1);
