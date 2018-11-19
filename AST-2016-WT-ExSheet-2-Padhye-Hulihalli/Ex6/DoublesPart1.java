@@ -48,7 +48,7 @@ public class DoublesPart1 {
 		double variance = 0;
 		
 		for(int i=0; i<list.size();i++) {
-			variance = variance + (list.get(i)-average);
+			variance = variance + Math.pow(list.get(i)-average,2);
 		}
 		variance = variance/list.size();
 		return variance;
