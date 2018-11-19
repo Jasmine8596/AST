@@ -2,6 +2,7 @@ package Ex5;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.lang.*;
 
 public class IntegersPart3 {
 	public static List<Integer> FindingPrimeIntegers(int LargestNumber){			
@@ -23,5 +24,23 @@ public class IntegersPart3 {
 			}
 		}
 		return primenumbers;
+	}
+	
+	public static long CalculateTime(long SmallestNumber,long LargestNumber) {
+		long StartTime = System.currentTimeMillis();
+		int count = 0;
+		for(long i = SmallestNumber; i <= 2*LargestNumber; i++) {
+			count++;
+		}
+		long StopTime = System.currentTimeMillis();
+		
+		long duration = (StopTime - StartTime);
+		
+		return duration;
+	}
+	
+	public static void main(String[] args) {
+		FindingPrimeIntegers(10);
+		System.out.print(CalculateTime(Integer.MIN_VALUE,Integer.MAX_VALUE));
 	}
 }
