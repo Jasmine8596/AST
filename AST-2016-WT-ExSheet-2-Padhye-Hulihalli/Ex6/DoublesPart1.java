@@ -54,6 +54,46 @@ public class DoublesPart1 {
 		return variance;
 	}
 	
+	public static List<Double> LimitValues(double sum,double product, double average, double variance){
+		double smallestnumber = 1;
+		double largestnumber = 0;
+		
+		List<Double> values = new ArrayList<Double>();
+		
+		if(sum < smallestnumber) {
+			smallestnumber = sum;
+		}
+		else if(sum > largestnumber) {
+			largestnumber = sum;
+		}
+		
+		if(product < smallestnumber) {
+			smallestnumber = product;
+		}
+		else if(product > largestnumber) {
+			largestnumber = product;
+		}
+		
+		if(average < smallestnumber) {
+			smallestnumber = average;
+		}
+		else if(average > largestnumber) {
+			largestnumber = average;
+		}
+		
+		if(variance < smallestnumber) {
+			smallestnumber = variance;
+		}
+		else if(variance > largestnumber) {
+			largestnumber = variance;
+		}
+		
+		values.add(smallestnumber);
+		values.add(largestnumber);
+		
+		return values;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(InputIntegers(1000,54,99)));
 		List<Double> randomnumbers = GenerateRandomFloatingPoint(10);
@@ -75,6 +115,12 @@ public class DoublesPart1 {
 		System.out.println("Variance of floating point numbers");
 		double variance = ProductOfNumbers(randomnumbers);
 		System.out.println(variance);
+		
+		List<Double> values = LimitValues(sum,product,average,variance);
+		System.out.println("The smallest value is:");
+		System.out.println(values.get(0));
+		System.out.println("The largest value is:");
+		System.out.println(values.get(1));
 	}
 	
 }
