@@ -27,6 +27,15 @@ public class DoublesPart1 {
 		return sum;
 	}
 	
+	public static double ProductOfNumbers(List<Double> list) {
+		double product = 1;
+
+		for (int i=0; i<list.size(); i++) {
+			product = product * list.get(i);
+		}
+		return product;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(InputIntegers(1000,54,99)));
 		List<Double> randomnumbers = GenerateRandomFloatingPoint(10);
@@ -35,6 +44,9 @@ public class DoublesPart1 {
 		System.out.println("Sum of floating point numbers is:");
 		double sum = SumOfNumbers(randomnumbers);
 		System.out.println(sum);
+		System.out.println("Product of floating point numbers");
+		double product = ProductOfNumbers(randomnumbers);
+		System.out.println(product);
 	}
 	
 }
