@@ -36,17 +36,30 @@ public class DoublesPart1 {
 		return product;
 	}
 	
+	public static double AverageOfNumbers(List<Double> list) {
+		double sum = SumOfNumbers(list);
+		
+		double average = sum/list.size();
+		return average;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(InputIntegers(1000,54,99)));
 		List<Double> randomnumbers = GenerateRandomFloatingPoint(10);
 		System.out.println("Random floating numbers:");
 		System.out.println(randomnumbers);
+		
 		System.out.println("Sum of floating point numbers is:");
 		double sum = SumOfNumbers(randomnumbers);
 		System.out.println(sum);
+		
 		System.out.println("Product of floating point numbers");
 		double product = ProductOfNumbers(randomnumbers);
 		System.out.println(product);
+		
+		System.out.println("Average of floating point numbers");
+		double average = ProductOfNumbers(randomnumbers);
+		System.out.println(average);
 	}
 	
 }
