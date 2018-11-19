@@ -19,11 +19,22 @@ public class DoublesPart1 {
 		return RandomNumbers;
 	}
 	
+	public static double SumOfNumbers(List<Double> list) {
+		double sum = 0;
+		for(int i=0;i<list.size();i++) {
+			sum = sum + list.get(i);
+		}
+		return sum;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(InputIntegers(1000,54,99)));
 		List<Double> randomnumbers = GenerateRandomFloatingPoint(10);
 		System.out.println("Random floating numbers:");
 		System.out.println(randomnumbers);
+		System.out.println("Sum of floating point numbers is:");
+		double sum = SumOfNumbers(randomnumbers);
+		System.out.println(sum);
 	}
 	
 }
