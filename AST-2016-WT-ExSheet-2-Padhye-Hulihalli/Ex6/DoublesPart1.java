@@ -43,6 +43,17 @@ public class DoublesPart1 {
 		return average;
 	}
 	
+	public static double VarianceOfNumbers(List<Double> list) {
+		double average = AverageOfNumbers(list);
+		double variance = 0;
+		
+		for(int i=0; i<list.size();i++) {
+			variance = variance + (list.get(i)-average);
+		}
+		variance = variance/list.size();
+		return variance;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(InputIntegers(1000,54,99)));
 		List<Double> randomnumbers = GenerateRandomFloatingPoint(10);
@@ -60,6 +71,10 @@ public class DoublesPart1 {
 		System.out.println("Average of floating point numbers");
 		double average = ProductOfNumbers(randomnumbers);
 		System.out.println(average);
+		
+		System.out.println("Variance of floating point numbers");
+		double variance = ProductOfNumbers(randomnumbers);
+		System.out.println(variance);
 	}
 	
 }
