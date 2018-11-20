@@ -99,26 +99,33 @@ public class DoublesPart1 {
 		List<Double> randomnumbers = GenerateRandomFloatingPoint(10);
 		System.out.println("Random floating numbers:");
 		System.out.println(randomnumbers);
+		System.out.println("\n");
 		
 		System.out.println("Sum of floating point numbers is:");
 		double sum = SumOfNumbers(randomnumbers);
 		System.out.println(sum);
+		System.out.println("\n");
 		
 		System.out.println("Product of floating point numbers");
 		double product = ProductOfNumbers(randomnumbers);
 		System.out.println(product);
+		System.out.println("\n");
 		
 		System.out.println("Average of floating point numbers");
 		double average = ProductOfNumbers(randomnumbers);
 		System.out.println(average);
+		System.out.println("\n");
 		
 		System.out.println("Variance of floating point numbers");
 		double variance = ProductOfNumbers(randomnumbers);
 		System.out.println(variance);
+		System.out.println("\n");
 		
 		List<Double> values = LimitValues(sum,product,average,variance);
 		System.out.println("The smallest value is:");
 		System.out.println(values.get(0));
+		System.out.println("\n");
+		
 		System.out.println("The largest value is:");
 		System.out.println(values.get(1));
 	}
