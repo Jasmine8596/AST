@@ -17,6 +17,10 @@ class Wx6Testing {
 		int[] output = test.InputIntegers(1000,54,99);
 		assertEquals(expected.length,output.length);
 		
+		/*
+		 * The test cases for generation of random floating numbers cannot be written as the floating numbers cannot be predicted
+		 */
+		
 		List<Double> inputlist = new ArrayList<Double>();
 		inputlist.add(1.1);
 		inputlist.add(10.2);
