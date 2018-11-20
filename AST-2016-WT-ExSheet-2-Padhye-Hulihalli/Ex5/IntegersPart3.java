@@ -40,7 +40,11 @@ public class IntegersPart3 {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println("Prime numbers till 10 are:");
 		FindingPrimeIntegers(10);
+		System.out.println("\n");
+		
+		System.out.println("Time required (in millis) to count from minimum to maximum integer value is:");
 		System.out.print(CalculateTime(Integer.MIN_VALUE,Integer.MAX_VALUE));
 	}
 }
