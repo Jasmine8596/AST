@@ -2,3 +2,9 @@ Observations for Ex 7: Doubles, Part II
 
 If we further increase the value of k, the output will grow nearer to 1, but will never be 1.
 The part of the function getting subtracted from the 1 will always tend to be 0 but not zero so the output will not be 1.
+
+The program is not very efficient in the scense, if we take the output with 2 digits after decimal point precision, 
+the result will be the same for the entire region i.e 0.99. So if we do not put precision limit, the code can be counted efficient.
+
+To calculate f(n+1) from f(n), we can calculate the difference between f(n-1) and f(n), and then f(n+1) will approximately 
+be equal to f(n)+difference. If we put a precision limit, the result will be same for both f(n) and f(n+1).
